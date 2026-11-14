@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f8efd8">
+  <title>Hay algo que quiero decirte...</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="page-shell">
+    <article class="page">
+
+      <header class="intro">
+        <p class="opening-text"><span id="typedIntro"></span></p>
+      </header>
+
+      <figure class="photo-card">
+        <img
+          class="photo-card__image"
+          src="img1.jpg"
+          alt="Foto especial de ustedes"
+        >
+        <figcaption>Lesbianchis 1 y lesbianchis 2</figcaption>
+      </figure>
+
+      <section class="letter-invitation">
+        <p>Un pequeño detalle para ti</p>
+        <button
+          class="seal-button"
+          id="openLetter"
+          type="button"
+          aria-controls="letterPanel"
+        >
+          Abrir
+          <span aria-hidden="true">♡</span>
+        </button>
+      </section>
+
+      <section class="letter-panel" id="letterPanel" hidden>
+        <div class="letter-paper">
+          <p class="letter-greeting">Para ti</p>
+          <p class="letter-text" id="letterText"></p>
+          <p class="letter-signature">
+            Con cariño,<br>
+            <span>Nombre del remitente</span>
+          </p>
+        </div>
+      </section>
+
+      <section class="proposal" id="proposal" hidden>
+        <p>Después de todo esto, quiero preguntarte...</p>
+        <h1>¿Quieres ser mi novia?</h1>
+        <button class="yes-button" id="yesButton" type="button">
+          Sí quiero <span aria-hidden="true">♥</span>
+        </button>
+      </section>
+
+      <section class="after-yes" id="afterYes" hidden>
+        <p class="counter-title">Llevamos juntas</p>
+
+        <div class="counter-grid" aria-label="Tiempo juntos">
+          <div class="counter-unit">
+            <span id="days">0</span>
+            <small>días</small>
+          </div>
+          <div class="counter-unit">
+            <span id="hours">00</span>
+            <small>horas</small>
+          </div>
+          <div class="counter-unit">
+            <span id="minutes">00</span>
+            <small>minutos</small>
+          </div>
+          <div class="counter-unit">
+            <span id="seconds">00</span>
+            <small>segundos</small>
+          </div>
+        </div>
+
+        <p class="start-date">Desde el 13 de noviembre de 2026</p>
+
+        <figure class="after-photo-card">
+          <div class="after-photo-frame">
+            <img id="afterPhoto" src="img2.jpg" alt="Otro recuerdo especial">
+            <div class="photo-placeholder" id="photoPlaceholder" hidden>
+              Aquí irá otra foto especial
+            </div>
+          </div>
+        </figure>
+
+        <section class="love-message">
+          <span class="ribbon ribbon-left" aria-hidden="true"></span>
+          <span class="ribbon ribbon-right" aria-hidden="true"></span>
+
+          <p class="love-heading">
+            Hoy es el primer día de nuestra vida juntos
+          </p>
+          <p>
+            Gracias por decir que sí. Quiero seguir compartiendo contigo
+            momentos bonitos, risas, abrazos y muchos recuerdos.
+          </p>
+          <p class="love-signature">Con todo mi cariño ♥</p>
+        </section>
+      </section>
+
+    </article>
+  </main>
+
+  <div class="celebration" id="celebration" aria-hidden="true" hidden></div>
+</body>
+</html>
